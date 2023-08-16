@@ -1,4 +1,8 @@
-<nav class="flex flex-row justify-between sticky mt-5 mx-10">
+<script lang="ts">
+    import { ScrollTo } from "$lib/ScrollTo";
+</script>
+
+<nav class="flex flex-row fixed justify-between mt-5 mx-10 top-0 left-0 right-0 z-10">
     <div class="flex flex-row items-center gap-x-5">
         <a href="/">
             <span class="sr-only">Logo</span>
@@ -9,9 +13,10 @@
         <h1 class="font-bold text-2xl text-center">Maxx</h1>
     </div>
     <div class="flex flex-row items-center text-center gap-x-5">
-        <a class="text-2xl hover:underline" href="/">Home</a>
-        <a class="text-2xl hover:underline" href="/">Projects</a>
-        <a class="text-2xl hover:underline" href="/">About Me</a>
-        <a class="text-2xl hover:underline" href="/">Contact</a>
+        <button class="text-2xl hover:underline" on:click={() => {ScrollTo("#Home")}}>Home</button>
+        <button class="text-2xl hover:underline" on:click={() => {ScrollTo("#Skills")}}>Skills</button>
+        <button class="text-2xl hover:underline" on:click={() => {ScrollTo("#Projects")}}>Projects</button>
+        <button class="text-2xl hover:underline" on:click={() => {ScrollTo("#About")}}>About</button>
+        <button class="text-2xl hover:underline" on:click={() => {ScrollTo("#Contact")}}>Contact</button>
     </div>
 </nav>
