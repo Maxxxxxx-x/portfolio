@@ -1,7 +1,8 @@
 <script lang="ts">
     import NavBar from "$lib/components/NavBar.svelte";
+    import Konami from "$lib/components/Konami.svelte";
+    import Skill from "$lib/components/Skill.svelte";
     import { ScrollTo } from "$lib/ScrollTo";
-    import Konami from "$lib/konami.svelte";
 </script>
 
 <svelte:head>
@@ -46,8 +47,47 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center items-center h-screen" id="#Skills">
+        <div class="flex flex-col items-center h-screen" id="#Skills">
             <h1 class="font-bold text-4xl">Skills</h1>
+            <div class="flex flex-col justify-center">
+                <div class="flex flex-row">
+                    <!--Tree-->
+                    <div class="flex flex-col">
+                        <div>
+
+                        </div>
+                        <div class="divider">Front end</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div>
+
+                        </div>
+                        <div class="divider">Back end</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div>
+
+                        </div>
+                        <div class="divider">Database</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div>
+
+                        </div>
+                        <div class="divider">Mobile</div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div>
+
+                        </div>
+                        <div class="divider">DevOps</div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <!--Profile pic-->
+                    <img class="w-20 h-20 rounded-full" src="/images/profile-pic.jpg" alt="profile pic" />
+                </div>
+            </div>
         </div>
         <div class="flex justify-center items-center h-screen" id="#Projects">
             <h1 class="font-bold text-4xl">Projects</h1>
